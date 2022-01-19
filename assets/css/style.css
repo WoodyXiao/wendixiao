@@ -3,8 +3,8 @@
   --header-height: 3rem;
 
   /* ========== for colors part ========== */
-  --first-color: #3e0e12;
-  --first-color-dark: #2f0a0d;
+  --first-color: #641e23;
+  --first-color-dark: #441216;
   --text-color: #524748;
   --first-color-light: #7b6f71;
   --first-color-lighten: #fbf9f9;
@@ -163,6 +163,10 @@ img {
 .nav_link:hover {
   color: var(--first-color-light);
 }
+.nav__logo{
+  width: 60px;
+  height:auto;
+}
 .nav__logo,
 .nav__toggle {
   color: var(--first-color-lighten);
@@ -292,14 +296,17 @@ img {
 /* button */
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--first-color-dark);
   color: var(--first-color-lighten);
   padding: 0.75rem 1rem;
   border-radius: 0.25rem;
   transition: 0.3s;
 }
 .button:hover {
-  background-color: var(--first-color-dark);
+  /* background-color: var(--first-color-dark);
+  color:var(--first-color-light); */
+  text-decoration: underline;
+  
 }
 .button-light {
   background-color: var(--first-color-light);

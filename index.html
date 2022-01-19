@@ -31,7 +31,12 @@
     <!-- ========== for the header part ========== -->
     <header class="l_header" id="header">
       <nav class="nav bd_container">
-        <a href="#" class="nav__logo">WoodyXiao</a>
+        <a href="#" class="nav__logo"
+          ><img
+            class="logo_img"
+            src="assets/img/final logo 3.1 white.png"
+            alt=""
+        /></a>
 
         <div class="nav_menu" id="nav-menu">
           <ul class="nav__list">
@@ -72,7 +77,7 @@
             <a
               download=""
               href="assets/pdf/Wendi Xiao Resume.pdf"
-              class="button button-light home__button"
+              class="button home__button"
               >Download my cv</a
             >
           </div>
@@ -81,7 +86,7 @@
             <a href="#" class="home__social-icon"
               ><i class="bx bxl-facebook-square"></i
             ></a>
-            <a href="#" class="home__social-icon"
+            <a href="https://github.com/WoodyXiao" class="home__social-icon"
               ><i class="bx bxl-github"></i
             ></a>
             <a href="#" class="home__social-icon"
@@ -288,9 +293,9 @@
         <div class="portfolio_nav">
           <span class="portfolio_item active_portfolio" data-filter="all"
             >ALL</span
-          ><span class="portfolio_item" data-filter=".frontend">Frontend</span
+          ><span class="portfolio_item" data-filter=".frontend">Web</span
           ><span class="portfolio_item" data-filter=".game">Game</span
-          ><span class="portfolio_item" data-filter=".ux">Ui/Ux</span
+          ><span class="portfolio_item" data-filter=".ux">UI/UX</span
           ><span class="portfolio_item" data-filter=".design">Design</span>
         </div>
 
@@ -305,15 +310,18 @@
 
             <div class="portfolio_data">
               <span class="portfolio_subtitle"
-                >Covid-19 Tracker website (JavaScript) - Personal Project</span
+                >Web development (PHP MySQL Ajax) - School Project</span
               >
-              <a href=""
+              <a href="https://github.com/WoodyXiao/IAT352-Final-Project"
                 ><h2 class="portfolio_title">
-                  A simple website that showing global stats of Covid-19 as well
-                  as different countries.
+                  Vancouver Public art website
                 </h2></a
               >
-              <a href="" class="button button-link">View Details</a>
+              <a
+                href="https://github.com/WoodyXiao/IAT352-Final-Project"
+                class="button button-link"
+                >View Details</a
+              >
             </div>
           </div>
 
@@ -327,18 +335,20 @@
 
             <div class="portfolio_data">
               <span class="portfolio_subtitle"
-                >Weather search website (React) - Personal Project</span
+                >Web development (JavaScript) - Personal Project</span
               >
-              <a href=""
-                ><h2 class="portfolio_title">
-                  A website about search different places' wheather information.
-                </h2></a
+              <a href="https://github.com/WoodyXiao/covid-19-tracker"
+                ><h2 class="portfolio_title">Covid-19 Tracker</h2></a
               >
-              <a href="" class="button button-link">View Details</a>
+              <a
+                href="https://github.com/WoodyXiao/covid-19-tracker"
+                class="button button-link"
+                >View Details</a
+              >
             </div>
           </div>
 
-          <div class="portfolio_content mix game">
+          <div class="portfolio_content mix frontend">
             <a href=""
               ><img
                 src="assets/img/final logo.png"
@@ -348,9 +358,9 @@
 
             <div class="portfolio_data">
               <span class="portfolio_subtitle"
-                >Black jack (JavaScript) - Personal Project</span
+                >Web development (React) - Personal Project</span
               >
-              <a href=""><h2 class="portfolio_title">black jack game</h2></a>
+              <a href=""><h2 class="portfolio_title">Weather Checker</h2></a>
               <a href="" class="button button-link">View Details</a>
             </div>
           </div>
@@ -367,12 +377,14 @@
               <span class="portfolio_subtitle"
                 >Web development (HTML CSS JS) - School Project</span
               >
-              <a href=""
-                ><h2 class="portfolio_title">
-                  IAT 235 - SFUPet business responsive website
-                </h2></a
+              <a href="https://github.com/WoodyXiao/xwd-website-practice"
+                ><h2 class="portfolio_title">SFUPet business website</h2></a
               >
-              <a href="" class="button button-link">View Details</a>
+              <a
+                href="https://github.com/WoodyXiao/xwd-website-practice"
+                class="button button-link"
+                >View Details</a
+              >
             </div>
           </div>
 
@@ -386,9 +398,9 @@
 
             <div class="portfolio_data">
               <span class="portfolio_subtitle"
-                >Mega Man X (Processing) - School Project</span
+                >Game development (Processing) - School Project</span
               >
-              <a href=""><h2 class="portfolio_title">IAT 167 - Mega Man</h2></a>
+              <a href=""><h2 class="portfolio_title">Mega Man X</h2></a>
               <a href="" class="button button-link">View Details</a>
             </div>
           </div>
@@ -405,9 +417,7 @@
               <span class="portfolio_subtitle"
                 >Poster Design (Adobe Illustrator) - School Project</span
               >
-              <a href=""
-                ><h2 class="portfolio_title">IAT 102 - poster design.</h2></a
-              >
+              <a href=""><h2 class="portfolio_title">Poster Design</h2></a>
               <a href="" class="button button-link">View Details</a>
             </div>
           </div>
@@ -456,7 +466,7 @@
             </div>
           </div>
 
-          <!-- <form action="" class="contact__form">
+          <form action="" class="contact__form">
             <div class="contact__inputs">
               <input type="text" placeholder="Name" class="contact__input" />
               <input type="email" placeholder="Email" class="contact__input" />
@@ -485,7 +495,7 @@
               class="button contact__button"
               value="Send Message"
             />
-          </form> -->
+          </form>
         </div>
       </section>
     </main>
@@ -500,12 +510,18 @@
         </p>
 
         <div class="footer__social">
-          <a href="" class="footer__link"><i class="box bxl-linkedin"></i></a>
-          <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
+          <a
+            href="https://www.linkedin.com/in/wendi-xiao-4ab16517b/"
+            class="footer__link"
+            ><i class="box bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/WoodyXiao" class="footer__link"
+            ><i class="bx bxl-github"></i
+          ></a>
           <a href="#" class="footer__link"><i class="bx bxl-instagram"></i></a>
         </div>
 
-        <p class="footer__copy">&#169; 2021 WoodyXiao. All right reserved</p>
+        <p class="footer__copy">&#169; 2022 WoodyXiao. All right reserved</p>
       </div>
     </footer>
 
