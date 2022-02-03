@@ -117,7 +117,9 @@ img {
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+  
 }
+
 .bd_grid {
   display: grid;
   gap: 1.5rem;
@@ -471,6 +473,7 @@ img {
 /* ========== CONTACTME ========== */
 .contact__container{
   row-gap: 2.5rem;
+  
 }
 
 .contact__content{
@@ -483,6 +486,7 @@ img {
   padding:1.5rem;
   text-align: center;
   box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+  
 }
 
 .contact__icon, .contact__title{
