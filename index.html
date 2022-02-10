@@ -192,7 +192,7 @@
       </section>
 
       <!-- for the project detail pop up window -->
-      <div class="project-detail-window" id="details">
+      <!-- <div class="project-detail-window" id="details">
         <div class="project-detail">
           <div class="porject-detail-upperbox">
             <div class="detail-img-container">
@@ -222,16 +222,16 @@
                   <div class="swiper-slide">
                     <img src="./assets/img/publicart/p8.PNG" alt="" />
                   </div>
-                </div>
-                <!-- 如果需要分页器 -->
-                <div class="swiper-pagination"></div>
+                </div> -->
+      <!-- 如果需要分页器 -->
+      <!-- <div class="swiper-pagination"></div> -->
 
-                <!-- 如果需要导航按钮 -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+      <!-- 如果需要导航按钮 -->
+      <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
 
-                <!-- 如果需要滚动条 -->
-                <div class="swiper-scrollbar"></div>
+      <!-- 如果需要滚动条 -->
+      <!-- <div class="swiper-scrollbar"></div>
               </div>
             </div>
             <div class="detail-context-container">
@@ -257,7 +257,7 @@
               </div>
               <div class="detail-description">
                 <div class="detail-description-title">
-                  <h2>Project detail</h2>
+                  <h2>Vancouver Public Art website</h2>
                 </div>
 
                 <div class="detail-description-body">
@@ -279,7 +279,7 @@
           </div>
           <div class="project-detail-lowerbox"></div>
         </div>
-      </div>
+      </div> -->
       <!-- end for the project detail pop up window -->
 
       <!-- ========== PORFOLIO ========== -->
@@ -405,6 +405,8 @@
         </div>
       </section>
 
+      <div class="project-detail-window" id="details"></div>
+
       <!-- ========== CONTACTME ========== -->
       <section class="contact section bd_container" id="contact">
         <span class="section-subtitle">For projects</span>
@@ -506,72 +508,72 @@
       </div>
     </footer>
 
-    <!-- ========== MIXITUP FILTER ========== -->
-    <script src="assets/js/mixitup.min.js"></script>
-    <!-- ========== for the main js part ========== -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/popup.js"></script>
-
     <!-- 官方文档: http://aui.github.io/art-template/zh-cn/docs/ -->
     <script src="https://unpkg.com/art-template@4.13.2/lib/template-web.js"></script>
 
     <!-- detail template -->
     <script id="tpl-project-details" type="text/html">
-      {{each contents}}
-      <div class="project-detail-window" id="details">
-        <div class="project-detail">
-          <div class="porject-detail-upperbox">
-            <div class="detail-img-container">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
+      {{each projectDetails}}
+      <div class="project-detail">
+        <div class="porject-detail-upperbox">
+          <div class="detail-img-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                {{each $value.img}}
+                <div class="swiper-slide">
+                  <img src="{{$value}}" alt="" />
                 </div>
-                <!-- 如果需要分页器 -->
-                <div class="swiper-pagination"></div>
+                {{/each}}
+              </div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
 
-                <!-- 如果需要导航按钮 -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+              <!-- 如果需要导航按钮 -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
 
-                <!-- 如果需要滚动条 -->
-                <div class="swiper-scrollbar"></div>
+              <!-- 如果需要滚动条 -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+          <div class="detail-context-container">
+            <div class="detail-information">
+              <div class="detail-title-container">
+                <h2>Project Information</h2>
+              </div>
+              <div class="detail-category-container">
+                <p><span>Category</span>: {{$value.Category}}</p>
+                <p><span>Language</span>: {{$value.Language}}</p>
+                <p><span>Type</span>: {{$value.Type}}</p>
+                <p><span>Project URL</span>:<a href="{{$value.URL}}">URL</a></p>
+                <p>
+                  <span>Source Code</span>:
+                  <a href="{{$value.Code}}">Github</a>
+                </p>
               </div>
             </div>
-            <div class="detail-context-container">
-              <div class="detail-information">
-                <div class="detail-title-container">
-                  <h2>Project Information</h2>
-                </div>
-                <div class="detail-category-container">
-                  <p><span>Category</span>: {{contents.Category}}</p>
-                  <p><span>Language</span>: {{contents.Language}}</p>
-                  <p><span>Type</span>: {{contents.Type}}</p>
-                  <p>
-                    <span>Project URL</span>:<a href="{{contents.URL}}"></a>
-                  </p>
-                  <p>
-                    <span>Source Code</span>: <a href="{{contents.Code}}"></a>
-                  </p>
-                </div>
+            <div class="detail-description">
+              <div class="detail-description-title">
+                <h1>{{$value.Title}}</h1>
               </div>
-              <div class="detail-description">
-                <div class="detail-description-title">
-                  <h1>Project detail</h1>
-                </div>
 
-                <div class="detail-description-body">
-                  <p>{{contents.description}}</p>
-                </div>
+              <div class="detail-description-body">
+                <p>{{$value.Description}}</p>
               </div>
             </div>
           </div>
-          <div class="project-detail-lowerbox"></div>
         </div>
+        <div class="project-detail-lowerbox"></div>
       </div>
+
       {{/each}}
     </script>
+
+    <!-- ========== MIXITUP FILTER ========== -->
+    <script src="assets/js/mixitup.min.js"></script>
+    <!-- ========== for the main js part ========== -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/popup.js"></script>
 
     <!-- for the swiper.js  -->
     <script src="./assets/swiper-7.4.1//swiper/swiper-bundle.min.js"></script>
