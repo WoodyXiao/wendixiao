@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ========== for css part ========== -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/detail.css" />
     <!-- for boxicons import css part -->
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
+    />
+    <!-- for swiper css part -->
+    <link
+      rel="stylesheet"
+      href="./assets/swiper-7.4.1/swiper/swiper-bundle.min.css"
     />
 
     <!-- ========== for gsap js ========== -->
@@ -47,7 +54,7 @@
               <a href="#about" class="nav_link">About</a>
             </li>
             <!-- <li class="nav__item">
-              <a href="#services" class="nav_link">Services</a>
+              <a href="#details" class="nav_link">Services</a>
             </li> -->
             <li class="nav__item">
               <a href="#portfolio" class="nav_link">Portfolio</a>
@@ -137,51 +144,6 @@
         <h2 class="section-title">Qualification</h2>
 
         <div class="qualification__container bd_grid">
-          <!-- for the work experience part -->
-          <!-- <div class="qualification_content">
-            <h2 class="qualification_title">
-              <i class="bx bxs-briefcase-alt qualification_title-icon"></i>
-              Work Experience
-            </h2>
-
-            <div class="bd_grid">
-              <div class="qualification_data">
-                <h3 class="qualification_area">
-                  Junior Front End Developer (Co-op)
-                </h3>
-
-                <div class="qualification__box">
-                  <span class="qualification_work">
-                    <i class="bx bxs-briefcase-alt qualification_icon"></i>
-                    tik tok inc.
-                  </span>
-
-                  <span class="qualification_work">
-                    <i class="bx bx-calendar-alt qualification_icon"></i>
-                    Dec 2021 - Feb 2022
-                  </span>
-                </div>
-              </div>
-
-              <div class="qualification_data">
-                <h3 class="qualification_area">Freelance UX / UI Designer</h3>
-
-                <div class="qualification__box">
-                  <span class="qualification_work">
-                    <i class="bx bxs-briefcase-alt qualification_icon"></i>
-                    tik tok inc.
-                  </span>
-
-                  <span class="qualification_work">
-                    <i class="bx bx-calendar-alt qualification_icon"></i>
-                    Jan 2021 - Aug 2021
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <!-- end for the work experience part -->
-
           <!-- for the education part -->
           <div class="qualification_content">
             <h2 class="qualification_title">
@@ -229,62 +191,96 @@
         </div>
       </section>
 
-      <!-- ========== services ========== -->
-      <!-- <section class="services section bd_container" id="services">
-        <span class="section-subtitle">What I offer</span>
-        <h2 class="section-title">Services</h2>
+      <!-- for the project detail pop up window -->
+      <div class="project-detail-window" id="details">
+        <div class="project-detail">
+          <div class="porject-detail-upperbox">
+            <div class="detail-img-container">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/img/publicart/p1.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/publicart/p2.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/publicart/p3.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/publicart/p4.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/publicart/p5.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/publicart/p6.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/publicart/p7.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/publicart/p8.png" alt="" />
+                  </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
 
-        <div class="services__container bd_grid">
-          <div class="services_data">
-            <i class="bx bx-palette services_icon"></i>
-            <h3 class="services_title">UX / UI Desgin</h3>
-            <p class="services_description">
-              I can do website layout, interface design with my skills.
-            </p>
-            <a href="" class="button">Know More</a>
-          </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
-          <div class="services_data">
-            <i class="bx bx-laptop services_icon"></i>
-            <h3 class="services_title">Web development (Frontend Side)</h3>
-            <p class="services_description">
-              I can convert web application layout into HTML, CSS, Javascript
-              code.
-            </p>
-            <a href="" class="button">Know More</a>
-          </div>
+                <!-- 如果需要滚动条 -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <div class="detail-context-container">
+              <div class="detail-information">
+                <div class="detail-title-container">
+                  <h2>Project Information</h2>
+                </div>
+                <div class="detail-category-container">
+                  <p><span>Category</span>: Web Development</p>
+                  <p><span>Language</span>: Ajax Jquery MySQL PHP</p>
+                  <p><span>Type</span>: Academic Project (IAT 352)</p>
+                  <p>
+                    <span>Source Code</span>:
+                    <a href="https://github.com/WoodyXiao/IAT352-Final-Project"
+                      >Github</a
+                    >
+                  </p>
+                  <p>
+                    <span>Project URL</span>:
+                    <a href="javascript:;"></a>
+                  </p>
+                </div>
+              </div>
+              <div class="detail-description">
+                <div class="detail-description-title">
+                  <h2>Project detail</h2>
+                </div>
 
-          <div class="services_data">
-            <i class="bx bx-pen services_icon"></i>
-            <h3 class="services_title">Graphic Desgin</h3>
-            <p class="services_description">
-              I can design banner, poster, logo or something related to brand
-              design as well.
-            </p>
-            <a href="" class="button">Know More</a>
+                <div class="detail-description-body">
+                  <p>
+                    The Vancouver Public Art website is created to promote the
+                    exploration of artworks throughout the city of Vancouver. It
+                    features new artworks to explore for visiting users, lists
+                    of artworks tailored for members, encourages community
+                    participation through rating and commenting on artworks by
+                    members and more functionalities. This report will describe
+                    the specifications of the website in detail, the process of
+                    gathering data, the design of the database, implementation
+                    of the database with data, and explain the backend
+                    operations for each page in the website.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="project-detail-lowerbox"></div>
         </div>
-      </section> -->
-
-      <!-- ========== project in mind ========== -->
-      <!-- <section class="project section bd_container">
-        <div class="project__container bd_container">
-          <div class="project__data">
-            <i class="bx bx-chat project__icon"></i>
-          </div>
-
-          <div>
-            <h2 class="project__title">Projects</h2>
-            <p class="project__description">
-              Here are some following projects that made by myself:
-            </p>
-          </div>
-
-          <div>
-            <a href="" class="button button-white">Contact Me</a>
-          </div>
-        </div>
-      </section> -->
+      </div>
+      <!-- end for the project detail pop up window -->
 
       <!-- ========== PORFOLIO ========== -->
       <section class="porfolio section bd_container" id="portfolio">
@@ -310,16 +306,14 @@
             /></a>
 
             <div class="portfolio_data">
-              <span class="portfolio_subtitle"
+              <span class="portfolio_subtitle" id="myBtn"
                 >Web development (PHP MySQL Ajax) - School Project</span
               >
               <a href="https://github.com/WoodyXiao/IAT352-Final-Project"
                 ><h2 class="portfolio_title">Vancouver Public Art</h2></a
               >
-              <a
-                href="https://github.com/WoodyXiao/IAT352-Final-Project"
-                class="button button-link"
-                >View Details</a
+              <a href="./pages/publicArt.html" class="button button-link"
+                >Source Code</a
               >
             </div>
           </div>
@@ -342,7 +336,7 @@
               <a
                 href="https://github.com/WoodyXiao/covid-19-tracker"
                 class="button button-link"
-                >View Details</a
+                >Source Code</a
               >
             </div>
           </div>
@@ -357,7 +351,7 @@
                 >Web development (React) - Personal Project</span
               >
               <a href=""><h2 class="portfolio_title">Weather Checker</h2></a>
-              <a href="" class="button button-link">View Details</a>
+              <a href="" class="button button-link">Source Code</a>
             </div>
           </div>
 
@@ -376,7 +370,7 @@
               <a
                 href="https://github.com/WoodyXiao/xwd-website-practice"
                 class="button button-link"
-                >View Details</a
+                >Source Code</a
               >
             </div>
           </div>
@@ -391,11 +385,11 @@
                 >Game development (Processing) - School Project</span
               >
               <a href=""><h2 class="portfolio_title">Mega Man X</h2></a>
-              <a href="" class="button button-link">View Details</a>
+              <a href="" class="button button-link">Source Code</a>
             </div>
           </div>
 
-          <div class="portfolio_content mix design">
+          <!-- <div class="portfolio_content mix design">
             <a href=""
               ><img src="assets/img/Poster1.png" alt="" class="portfolio_img"
             /></a>
@@ -405,9 +399,9 @@
                 >Poster Design (Adobe Illustrator) - School Project</span
               >
               <a href=""><h2 class="portfolio_title">Poster Design</h2></a>
-              <a href="" class="button button-link">View Details</a>
+              <a href="" class="button button-link">Source Code</a>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -516,5 +510,71 @@
     <script src="assets/js/mixitup.min.js"></script>
     <!-- ========== for the main js part ========== -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/popup.js"></script>
+
+    <!-- 官方文档: http://aui.github.io/art-template/zh-cn/docs/ -->
+    <script src="https://unpkg.com/art-template@4.13.2/lib/template-web.js"></script>
+
+    <!-- detail template -->
+    <script id="tpl-project-details" type="text/html">
+      {{each contents}}
+      <div class="project-detail-window" id="details">
+        <div class="project-detail">
+          <div class="porject-detail-upperbox">
+            <div class="detail-img-container">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- 如果需要滚动条 -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <div class="detail-context-container">
+              <div class="detail-information">
+                <div class="detail-title-container">
+                  <h2>Project Information</h2>
+                </div>
+                <div class="detail-category-container">
+                  <p><span>Category</span>: {{contents.Category}}</p>
+                  <p><span>Language</span>: {{contents.Language}}</p>
+                  <p><span>Type</span>: {{contents.Type}}</p>
+                  <p>
+                    <span>Project URL</span>:<a href="{{contents.URL}}"></a>
+                  </p>
+                  <p>
+                    <span>Source Code</span>: <a href="{{contents.Code}}"></a>
+                  </p>
+                </div>
+              </div>
+              <div class="detail-description">
+                <div class="detail-description-title">
+                  <h1>Project detail</h1>
+                </div>
+
+                <div class="detail-description-body">
+                  <p>{{contents.description}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-detail-lowerbox"></div>
+        </div>
+      </div>
+      {{/each}}
+    </script>
+
+    <!-- for the swiper.js  -->
+    <script src="./assets/swiper-7.4.1//swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
   </body>
 </html>

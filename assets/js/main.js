@@ -33,11 +33,13 @@ function scrollActive() {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 200;
         let sectionId = current.getAttribute('id');
+        console.log(sectionId);
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active_link');
         } else {
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active_link');
+
         }
     })
 
