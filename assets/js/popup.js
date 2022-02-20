@@ -18,6 +18,8 @@ const projectDetails = [
     URL: "",
     Title: "Vancouver Public Art website",
     Description:
+      "The Vancouver Public Art website is created to promote the exploration of artworks throughout the city of Vancouver.",
+    Details:
       "The Vancouver Public Art website is created to promote the exploration of artworks throughout the city of Vancouver.It features new artworks to explore for visiting users, lists of artworks tailored for members, encourages community participation through rating and commenting on artworks by members and more functionalities.This report will describe the specifications of the website in detail, the process of gathering data, the design of the database, implementation of the database with data, and explain the backend operations for each page in the website.",
   },
   {
@@ -34,6 +36,8 @@ const projectDetails = [
     URL: "https://woodyxiao.github.io/covid-19-tracker/",
     Title: "Covid 19 Tracker",
     Description:
+      "A simple covid-19 tracker that show stats of countries as well as the world. Geoplugin.js is not using at this moment. Since the News API plan limitation, the part of showing different countries covid-19 news are not available and only work on localhost.",
+    Details:
       "A simple covid-19 tracker that show stats of countries as well as the world. Geoplugin.js is not using at this moment. Since the News API plan limitation, the part of showing different countries covid-19 news are not available and only work on localhost.",
   },
   {
@@ -52,16 +56,54 @@ const projectDetails = [
     Title: "Weather Checker",
     Description:
       "A simple Weather chcker to search any city's weather and its details, predict weather",
+    Details:
+      "A simple Weather chcker to search any city's weather and its details, predict weather",
+  },
+  {
+    id: "pet",
+    img: [
+      "./assets/img/pet/pet1.PNG",
+      "./assets/img/pet/pet2.PNG",
+      "./assets/img/pet/pet3.PNG",
+      "./assets/img/pet/pet4.PNG",
+      "./assets/img/pet/pet5.PNG",
+      "./assets/img/pet/pet6.PNG",
+      "./assets/img/pet/pet7.PNG",
+      "./assets/img/pet/pet8.PNG",
+      "./assets/img/pet/pet9.PNG",
+      "./assets/img/pet/pet10.PNG",
+      "./assets/img/pet/pet11.PNG",
+      "./assets/img/pet/pet12.PNG",
+      "./assets/img/pet/pet13.PNG",
+      "./assets/img/pet/pet14.PNG",
+    ],
+    Category: "Web Development",
+    Language: "HTML CSS JS",
+    Type: "Academic Project (IAT 235)",
+    Code: "https://github.com/WoodyXiao/xwd-website-practice",
+    URL: "https://woodyxiao.github.io/xwd-website-practice/",
+    Title: "SFUPet Business Website",
+    Description:
+      "Simple school project, a mockup website for therapist pet bussiness",
+    Details:
+      "Simple school project, a mockup website for therapist pet bussiness",
   },
 ];
 function popupEvent(el, content, distant) {
   el.addEventListener(
     "click",
-    () => {
-      content.style.display = "flex";
-      const list = document.querySelectorAll(".project-detail");
-      for (let i = 0; i < list.length; i++) {
-        list[i].style.transform = `translate3d(${distant}%, 0px, 0px)`;
+    (e) => {
+      if (
+        e.target === el ||
+        e.target == el.firstElementChild ||
+        e.target == el.querySelector(".portfolio_title")
+      ) {
+        console.log(el.firstElementChild);
+        content.style.display = "flex";
+        const list = document.querySelectorAll(".project-detail");
+        for (let i = 0; i < list.length; i++) {
+          list[i].style.transform = `translate3d(${distant}%, 0px, 0px)`;
+        }
       }
     },
     false
@@ -72,7 +114,6 @@ function closePopup(window, content) {
     "click",
     (e) => {
       if (e.target === content) {
-        console.log("a");
         document.getElementById("details").style.display = "none";
       }
     },
@@ -103,12 +144,17 @@ popupEvent(
 popupEvent(
   document.getElementById("tracker"),
   document.getElementById("details"),
-  -100
+  -109
 );
 popupEvent(
   document.getElementById("weather"),
   document.getElementById("details"),
-  -200
+  -217
+);
+popupEvent(
+  document.getElementById("pet"),
+  document.getElementById("details"),
+  -326
 );
 
 closePopup(window, document.getElementById("details"));

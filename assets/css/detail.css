@@ -6,7 +6,7 @@
   padding-top: 50px; /* Location of the box */
   left: 0;
   top: 0;
-  width: 300%; /* Full width */
+  width: 400%; /* Full width */
   height: 100%; /* Full height */
   overflow: hidden; /* Enable scroll if needed */
   overflow-x: auto;
@@ -18,7 +18,7 @@
 /* Modal Content */
 .project-detail-window .project-detail {
   background-color: var(--first-color-lighten);
-  margin: auto;
+  margin: auto 1%;
   padding: 20px;
   border: 1px solid #888;
   width: 95%;
@@ -52,6 +52,32 @@
   padding-bottom: 50px;
 }
 
+.project-detail-window .project-detail .project-detail-lowerbox {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  /* background-color: rgb(46, 189, 33); */
+  width: 80%;
+  height: auto;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+.project-detail-window
+  .project-detail
+  .project-detail-lowerbox
+  .project-detail-title-container {
+  font-size: var(--h3-font-size);
+  padding: 15px 0;
+  margin: 0 20px;
+}
+.project-detail-window
+  .project-detail
+  .project-detail-lowerbox
+  .project-detail-description-container {
+  padding: 15px 0;
+  margin: 0 20px;
+}
+
 .project-detail-window
   .project-detail
   .porject-detail-upperbox
@@ -68,7 +94,8 @@
   .porject-detail-upperbox
   .detail-context-container {
   width: 30%;
-  height: 650px;
+  /* height: 650px; */
+  height: auto;
   /* background-color: rgb(29, 2, 2); */
   margin: 0 12px;
 }
@@ -239,6 +266,25 @@
     object-fit: cover;
     width: 100%;
   }
+
+  .project-detail-window .project-detail .project-detail-lowerbox {
+    padding-top: 0;
+  }
+  .project-detail-window
+    .project-detail
+    .project-detail-lowerbox
+    .project-detail-title-container {
+    font-size: var(--h3-font-size);
+    padding: 15px 0;
+    margin: 0 20px;
+  }
+  .project-detail-window
+    .project-detail
+    .project-detail-lowerbox
+    .project-detail-description-container {
+    padding: 15px 0;
+    margin: 0 20px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -251,5 +297,8 @@
     .project-detail
     .porject-detail-upperbox
     .detail-img-container {
+  }
+  .project-detail-window .project-detail .project-detail-lowerbox {
+    width: 100%;
   }
 }

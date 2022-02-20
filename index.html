@@ -214,13 +214,11 @@
                 class="portfolio_img"
             /></a>
 
-            <div class="portfolio_data">
-              <span class="portfolio_subtitle" id="public"
+            <div class="portfolio_data" id="public">
+              <span class="portfolio_subtitle" id="publicSpan"
                 >Web development (PHP MySQL Ajax) - School Project</span
               >
-              <a href="https://github.com/WoodyXiao/IAT352-Final-Project"
-                ><h2 class="portfolio_title">Vancouver Public Art</h2></a
-              >
+              <h2 class="portfolio_title">Vancouver Public Art</h2>
               <a href="./pages/publicArt.html" class="button button-link"
                 >Source Code</a
               >
@@ -235,13 +233,11 @@
                 class="portfolio_img"
             /></a>
 
-            <div class="portfolio_data">
-              <span class="portfolio_subtitle" id="tracker"
+            <div class="portfolio_data" id="tracker">
+              <span class="portfolio_subtitle"
                 >Web development (JavaScript) - Personal Project</span
               >
-              <a href="https://github.com/WoodyXiao/covid-19-tracker"
-                ><h2 class="portfolio_title">Covid-19 Tracker</h2></a
-              >
+              <h2 class="portfolio_title">Covid-19 Tracker</h2>
               <a
                 href="https://github.com/WoodyXiao/covid-19-tracker"
                 class="button button-link"
@@ -255,11 +251,11 @@
               ><img src="assets/img/Weather1.PNG" alt="" class="portfolio_img"
             /></a>
 
-            <div class="portfolio_data">
-              <span class="portfolio_subtitle" id="weather"
+            <div class="portfolio_data" id="weather">
+              <span class="portfolio_subtitle"
                 >Web development (React) - Personal Project</span
               >
-              <a href=""><h2 class="portfolio_title">Weather Checker</h2></a>
+              <h2 class="portfolio_title">Weather Checker</h2>
               <a href="" class="button button-link">Source Code</a>
             </div>
           </div>
@@ -269,13 +265,12 @@
               ><img src="assets/img/SfuPet1.PNG" alt="" class="portfolio_img"
             /></a>
 
-            <div class="portfolio_data">
+            <div class="portfolio_data" id="pet">
               <span class="portfolio_subtitle"
                 >Web development (HTML CSS JS) - School Project</span
               >
-              <a href="https://github.com/WoodyXiao/xwd-website-practice"
-                ><h2 class="portfolio_title">SFUPet business website</h2></a
-              >
+              <h2 class="portfolio_title">SFUPet business website</h2>
+
               <a
                 href="https://github.com/WoodyXiao/xwd-website-practice"
                 class="button button-link"
@@ -290,7 +285,7 @@
             /></a>
 
             <div class="portfolio_data">
-              <span class="portfolio_subtitle"
+              <span class="portfolio_subtitle" id="mega"
                 >Game development (Processing) - School Project</span
               >
               <a href=""><h2 class="portfolio_title">Mega Man X</h2></a>
@@ -473,7 +468,14 @@
             </div>
           </div>
         </div>
-        <div class="project-detail-lowerbox"></div>
+        <div class="project-detail-lowerbox">
+          <div class="project-detail-title-container">
+            <h3>Project details</h3>
+          </div>
+          <div class="project-detail-description-container">
+            <p>{{$value.Details}}</p>
+          </div>
+        </div>
       </div>
 
       {{/each}}
