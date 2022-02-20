@@ -78,6 +78,16 @@ function closePopup(window, content) {
     },
     false
   );
+  window.addEventListener(
+    "touchstart",
+    (e) => {
+      if (e.target === content) {
+        console.log("a");
+        content.style.display = "none";
+      }
+    },
+    false
+  );
 }
 
 const box = document.querySelector(".project-detail-window");
