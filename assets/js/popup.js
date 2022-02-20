@@ -73,7 +73,7 @@ function closePopup(window, content) {
     (e) => {
       if (e.target === content) {
         console.log("a");
-        content.style.display = "none";
+        document.getElementById("details").style.display = "none";
       }
     },
     false
@@ -83,7 +83,7 @@ function closePopup(window, content) {
     (e) => {
       if (e.target === content) {
         console.log("a");
-        content.style.display = "none";
+        document.getElementById("details").style.display = "none";
       }
     },
     false
@@ -112,3 +112,7 @@ popupEvent(
 );
 
 closePopup(window, document.getElementById("details"));
+const list = document.querySelectorAll(".close-icon");
+for (let i = 0; i < list.length; i++) {
+  closePopup(list[i], list[i]);
+}

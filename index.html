@@ -191,97 +191,6 @@
         </div>
       </section>
 
-      <!-- for the project detail pop up window -->
-      <!-- <div class="project-detail-window" id="details">
-        <div class="project-detail">
-          <div class="porject-detail-upperbox">
-            <div class="detail-img-container">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./assets/img/publicart/p1.PNG" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./assets/img/publicart/p2.PNG" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./assets/img/publicart/p3.PNG" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./assets/img/publicart/p4.PNG" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./assets/img/publicart/p5.PNG" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./assets/img/publicart/p6.PNG" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./assets/img/publicart/p7.PNG" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./assets/img/publicart/p8.PNG" alt="" />
-                  </div>
-                </div> -->
-      <!-- 如果需要分页器 -->
-      <!-- <div class="swiper-pagination"></div> -->
-
-      <!-- 如果需要导航按钮 -->
-      <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
-
-      <!-- 如果需要滚动条 -->
-      <!-- <div class="swiper-scrollbar"></div>
-              </div>
-            </div>
-            <div class="detail-context-container">
-              <div class="detail-information">
-                <div class="detail-title-container">
-                  <h2>Project Information</h2>
-                </div>
-                <div class="detail-category-container">
-                  <p><span>Category</span>: Web Development</p>
-                  <p><span>Language</span>: Ajax Jquery MySQL PHP</p>
-                  <p><span>Type</span>: Academic Project (IAT 352)</p>
-                  <p>
-                    <span>Source Code</span>:
-                    <a href="https://github.com/WoodyXiao/IAT352-Final-Project"
-                      >Github</a
-                    >
-                  </p>
-                  <p>
-                    <span>Project URL</span>:
-                    <a href="javascript:;"></a>
-                  </p>
-                </div>
-              </div>
-              <div class="detail-description">
-                <div class="detail-description-title">
-                  <h2>Vancouver Public Art website</h2>
-                </div>
-
-                <div class="detail-description-body">
-                  <p>
-                    The Vancouver Public Art website is created to promote the
-                    exploration of artworks throughout the city of Vancouver. It
-                    features new artworks to explore for visiting users, lists
-                    of artworks tailored for members, encourages community
-                    participation through rating and commenting on artworks by
-                    members and more functionalities. This report will describe
-                    the specifications of the website in detail, the process of
-                    gathering data, the design of the database, implementation
-                    of the database with data, and explain the backend
-                    operations for each page in the website.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-detail-lowerbox"></div>
-        </div>
-      </div> -->
-      <!-- end for the project detail pop up window -->
-
       <!-- ========== PORFOLIO ========== -->
       <section class="porfolio section bd_container" id="portfolio">
         <span class="section-subtitle">My recent works</span>
@@ -515,6 +424,7 @@
     <script id="tpl-project-details" type="text/html">
       {{each projectDetails}}
       <div class="project-detail">
+        <p class="close-icon">Close</p>
         <div class="porject-detail-upperbox">
           <div class="detail-img-container">
             <div class="swiper">
