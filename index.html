@@ -207,7 +207,7 @@
 
         <div class="portfolio__container bd_grid">
           <div class="portfolio_content mix frontend">
-            <a href=""
+            <a href="javascript:;"
               ><img
                 src="assets/img/PublicArt1.png"
                 alt=""
@@ -226,7 +226,7 @@
           </div>
 
           <div class="portfolio_content mix frontend">
-            <a href=""
+            <a href="javascript:;"
               ><img
                 src="assets/img/Covid19Tracker1.PNG"
                 alt=""
@@ -247,7 +247,7 @@
           </div>
 
           <div class="portfolio_content mix frontend">
-            <a href=""
+            <a href="javascript:;"
               ><img src="assets/img/Weather1.PNG" alt="" class="portfolio_img"
             /></a>
 
@@ -261,7 +261,7 @@
           </div>
 
           <div class="portfolio_content mix frontend">
-            <a href=""
+            <a href="javascript:;"
               ><img src="assets/img/SfuPet1.PNG" alt="" class="portfolio_img"
             /></a>
 
@@ -279,8 +279,8 @@
             </div>
           </div>
 
-          <div class="portfolio_content mix game">
-            <a href=""
+          <!-- <div class="portfolio_content mix game">
+            <a href="javascript:;"
               ><img src="assets/img/MegaMan1.PNG" alt="" class="portfolio_img"
             /></a>
 
@@ -291,7 +291,7 @@
               <a href=""><h2 class="portfolio_title">Mega Man X</h2></a>
               <a href="" class="button button-link">Source Code</a>
             </div>
-          </div>
+          </div> -->
 
           <!-- <div class="portfolio_content mix design">
             <a href=""
@@ -450,7 +450,9 @@
                 <p><span>Category</span>: {{$value.Category}}</p>
                 <p><span>Language</span>: {{$value.Language}}</p>
                 <p><span>Type</span>: {{$value.Type}}</p>
-                <p><span>Project URL</span>:<a href="{{$value.URL}}">URL</a></p>
+                <p>
+                  <span>Project URL</span>:<a href="{{$value.URL}}"> URL</a>
+                </p>
                 <p>
                   <span>Source Code</span>:
                   <a href="{{$value.Code}}">Github</a>
@@ -474,6 +476,27 @@
           </div>
           <div class="project-detail-description-container">
             <p>{{$value.Details}}</p>
+            <div class="project-detail-description-container-content">
+              {{each $value.Content}}
+              <h4>{{$value.subTitle}}</h4>
+              <img src="{{$value.img}}" alt="" />
+              <p>{{$value.content}}</p>
+              {{if $value.reportURL}}
+              <p>
+                (For
+                <a href="{{$value.reportURL}}">full report</a>)
+              </p>
+              {{/if}} {{if $value.apiURL}}
+              <h4>API Reference</h4>
+              <ul>
+                {{each $value.apiURL}}
+                <li>
+                  {{$value.name}}: <a href="{{$value.url}}"> {{$value.url}}</a>
+                </li>
+                {{/each}}
+              </ul>
+              {{/if}}{{/each}}
+            </div>
           </div>
         </div>
       </div>

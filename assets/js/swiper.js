@@ -18,11 +18,11 @@ const mySwiper = new Swiper(".swiper", {
   //     el: ".swiper-scrollbar",
   // },
 
-  autoplay: {
-    delay: 3000,
-    stopOnLastSlide: false,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   stopOnLastSlide: false,
+  //   disableOnInteraction: false,
+  // },
 });
 
 // const $nextBtn = document.getElementById("btn-next");
