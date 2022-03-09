@@ -1,7 +1,7 @@
 const publicArt = [
   {
     subTitle: "Below is the ER diagram for our public art website: ",
-    img: "./assets/img/publicart/content/public1.JPG",
+    img: "./assets/img/publicart/content/public1.PNG",
     content: "",
   },
   {
@@ -10,7 +10,7 @@ const publicArt = [
     content: "",
   },
   {
-    img: "./assets/img/publicart/content/public3.SVG",
+    img: "./assets/img/publicart/content/public3.PNG",
     content:
       "All relationships have a many-to-many relationship. Members can comment on and rate multiple artworks, and artworks can contain comments and ratings from different users. Members can have multiple artworks in their favorites list and artworks can belong to different members’ lists. This is also the case for a member’s following list and artists. We decided in the end to have a MemberSetting table to save each member’s preferences as it worked better than using cookies. In each relationship, unique ID’s are assigned to each record and used as the primary key to easily distinguish between each of them.  After downloading the Excel spreadsheets of the public art and artists data, artwork names were added manually to the public art spreadsheet as explained previously. Unused columns such as photo credit or URL to the City of Vancouver website were removed. We then created the tables in the database in myPHP and imported the public art spreadsheet for the artwork table and artists spreadsheet for the artist table. Primary keys and foreign keys are then set. ",
   },
