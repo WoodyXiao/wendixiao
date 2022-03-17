@@ -85,7 +85,7 @@
               download=""
               href="assets/pdf/Resume Wendi Xiao.pdf"
               class="button home__button"
-              >Download my cv</a
+              >Download my resume</a
             >
           </div>
 
@@ -197,73 +197,75 @@
         <h2 class="section-title">Porfolio</h2>
 
         <div class="portfolio_nav">
-          <span class="portfolio_item active_portfolio" data-filter="all"
+          <!-- <span class="portfolio_item active_portfolio" data-filter="all"
             >ALL</span
           ><span class="portfolio_item" data-filter=".frontend">Web</span
           ><span class="portfolio_item" data-filter=".game">Game</span
           ><span class="portfolio_item" data-filter=".ux">UI/UX</span
-          ><span class="portfolio_item" data-filter=".design">Design</span>
+          ><span class="portfolio_item" data-filter=".design">Design</span> -->
         </div>
 
-        <div class="portfolio__container bd_grid">
-          <div class="portfolio_content mix frontend">
-            <a href="javascript:;"
-              ><img
-                src="assets/img/PublicArt1.png"
-                alt=""
-                class="portfolio_img"
-            /></a>
+        <div class="portfolio__container bd_grid" style="cursor: pointer">
+          <div class="portfolio_content mix frontend" id="public1">
+            <img src="assets/img/PublicArt1.png" alt="" class="portfolio_img" />
 
             <div class="portfolio_data" id="public">
               <span class="portfolio_subtitle" id="publicSpan"
                 >Web development (PHP MySQL Ajax) - School Project</span
               >
               <h2 class="portfolio_title">Vancouver Public Art</h2>
-              <a href="./pages/publicArt.html" class="button button-link"
+              <!-- <a href="./pages/publicArt.html" class="button button-link"
                 >Source Code</a
-              >
+              > -->
             </div>
           </div>
 
-          <div class="portfolio_content mix frontend">
-            <a href="javascript:;"
-              ><img
-                src="assets/img/Covid19Tracker1.PNG"
-                alt=""
-                class="portfolio_img"
-            /></a>
+          <div
+            class="portfolio_content mix frontend"
+            id="tracker1"
+            style="cursor: pointer"
+          >
+            <img
+              src="assets/img/Covid19Tracker1.PNG"
+              alt=""
+              class="portfolio_img"
+            />
 
             <div class="portfolio_data" id="tracker">
               <span class="portfolio_subtitle"
                 >Web development (JavaScript) - Personal Project</span
               >
               <h2 class="portfolio_title">Covid-19 Tracker</h2>
-              <a
+              <!-- <a
                 href="https://github.com/WoodyXiao/covid-19-tracker"
                 class="button button-link"
                 >Source Code</a
-              >
+              > -->
             </div>
           </div>
 
-          <div class="portfolio_content mix frontend">
-            <a href="javascript:;"
-              ><img src="assets/img/Weather1.PNG" alt="" class="portfolio_img"
-            /></a>
+          <div
+            class="portfolio_content mix frontend"
+            id="weather1"
+            style="cursor: pointer"
+          >
+            <img src="assets/img/Weather1.PNG" alt="" class="portfolio_img" />
 
             <div class="portfolio_data" id="weather">
               <span class="portfolio_subtitle"
                 >Web development (React) - Personal Project</span
               >
               <h2 class="portfolio_title">Weather Checker</h2>
-              <a href="" class="button button-link">Source Code</a>
+              <!-- <a href="" class="button button-link">Source Code</a> -->
             </div>
           </div>
 
-          <div class="portfolio_content mix frontend">
-            <a href="javascript:;"
-              ><img src="assets/img/SfuPet1.PNG" alt="" class="portfolio_img"
-            /></a>
+          <div
+            class="portfolio_content mix frontend"
+            id="pet1"
+            style="cursor: pointer"
+          >
+            <img src="assets/img/SfuPet1.PNG" alt="" class="portfolio_img" />
 
             <div class="portfolio_data" id="pet">
               <span class="portfolio_subtitle"
@@ -271,11 +273,11 @@
               >
               <h2 class="portfolio_title">SFUPet business website</h2>
 
-              <a
+              <!-- <a
                 href="https://github.com/WoodyXiao/xwd-website-practice"
                 class="button button-link"
                 >Source Code</a
-              >
+              > -->
             </div>
           </div>
 
@@ -324,16 +326,16 @@
               <span class="contact__description">Burnaby Canada</span>
             </div>
 
-            <div class="contact__box">
+            <!-- <div class="contact__box">
               <i class="bx bx-phone contact__icon"></i>
               <h3 class="contact__title">Phone</h3>
               <span class="contact__description">204-881-3703</span>
-            </div>
+            </div> -->
 
             <div class="contact__box">
               <i class="bx bx-envelope contact__icon"></i>
-              <h3 class="contact__title">Gmail</h3>
-              <span class="contact__description">qq443907076@gmail.com</span>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__description">wendix@sfu.ca</span>
             </div>
 
             <div class="contact__box">
@@ -419,7 +421,9 @@
     <script id="tpl-project-details" type="text/html">
       {{each projectDetails}}
       <div class="project-detail">
-        <p class="close-icon">Close</p>
+        <div class="close-icon-container">
+          <div class="close-icon">CLOSE</div>
+        </div>
         <div class="porject-detail-upperbox">
           <div class="detail-img-container">
             <div class="swiper">
@@ -451,7 +455,11 @@
                 <p><span>Language</span>: {{$value.Language}}</p>
                 <p><span>Type</span>: {{$value.Type}}</p>
                 <p>
-                  <span>Project URL</span>:<a href="{{$value.URL}}"> URL</a>
+                  <span>Member(s)</span>: {{each $value.Name}} {{$value}}
+                  {{/each}}
+                </p>
+                <p>
+                  <span>Project URL</span>: <a href="{{$value.URL}}">URL</a>
                 </p>
                 <p>
                   <span>Source Code</span>:
@@ -479,7 +487,9 @@
             <div class="project-detail-description-container-content">
               {{each $value.Content}}
               <h4>{{$value.subTitle}}</h4>
-              <img src="{{$value.img}}" alt="" />
+              {{each $value.img}}
+                <img src="{{$value}}" alt="" />
+              {{/each}}
               <p>{{$value.content}}</p>
               {{if $value.reportURL}}
               <p>
@@ -498,6 +508,15 @@
               {{/if}}{{/each}}
             </div>
           </div>
+          <div class="project-detail-title-container">
+            <h3>Project Reflection</h3>
+          </div>
+          <div class="project-detail-description-container">
+            <div class="project-detail-description-container-content">
+              <p>{{$value.Reflection}}</p>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
 
