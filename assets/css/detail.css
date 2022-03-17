@@ -333,11 +333,11 @@
     width: 100%;
     height: auto;
   }
-  .project-detail-window
+  /* .project-detail-window
     .project-detail
     .porject-detail-upperbox
     .detail-img-container {
-  }
+  } */
   .project-detail-window .project-detail .project-detail-lowerbox {
     width: 100%;
   }
