@@ -58,14 +58,28 @@ const publicArt = [
 ];
 const sfuPet = [
   {
-    subTitle: "Below is the wireframe for the desktop device in figma: ",
+    subTitle:
+      "1. Design the wireframe for the website in the desktop device size by using Figma: ",
     img: ["./assets/img/pet/content/pet1.PNG"],
-    content: "This is content",
+    content:
+      "First of all, We discuss and design a wireframe of the website by implementing Figma. Design each paages layout and font-size.",
   },
   {
-    subTitle: "Below is the wireframe for the mobile device in figma: ",
+    subTitle:
+      "2. Design the wireframe for the website in mobile device size by using Figma",
     img: ["./assets/img/pet/content/pet2.PNG"],
-    content: "This is content",
+    content:
+      "Secondly, When we have an layout design for the desktop size, We then converted the design into the mobile device size. ",
+  },
+  {
+    subTitle: "3. Final result in the main page",
+    img: ["./assets/img/pet/detail/1.GIF"],
+    content: "",
+  },
+  {
+    subTitle: "4. Final result in the second page",
+    img: ["./assets/img/pet/detail/2.GIF"],
+    content: "",
   },
 ];
 const tracker = [
@@ -74,7 +88,7 @@ const tracker = [
       "1. For the country selection and country search function (countries.js) ",
     img: ["./assets/img/tracker/detail/country/countryjs.PNG"],
     content:
-      "As the image shown above, I first create a long list that include almost all the country name and its code. Code are for using a keyword to fetch different country covid-19 stats from covid-19 API. Nextly, to create a effect that showing a country list when user click the change button, I first use 'querySelector()' to select the button DOM, then adding a 'eventListener' to this, and then use 'innerHTML' to add the html tag '<li></li>' with looping through the country list that I created early. For the input setting, and country filter effect. I first used 'querySelector()' to select input DOM, and use a 'value' variable to store the user input content, then call the JavaScript method 'startsWith()' to filter the country names that match to the user input by adding or removing the CSS class of 'hide' or 'show'. ",
+      "As the image shown above, I first create a long list that include almost all the country name and its code. Code is for using a keyword to fetch different country covid-19 stats from covid-19 API. Nextly, to create an effect that showing a country list when user click the change button, I first use 'querySelector()' to select the button DOM, then adding a 'eventListener' to this, and then use 'innerHTML' to add the html tag '<li></li>' with looping through the country list that I created early. For the input setting, and country filter effect. I first used 'querySelector()' to select input DOM, and use a 'value' variable to store the user input content, then call the JavaScript method 'startsWith()' to filter the country names that match to the user input by adding or removing the CSS class of 'hide' or 'show'.",
   },
   {
     subTitle:
@@ -91,28 +105,28 @@ const tracker = [
       "2. For the country selection and country search function (js.js) ",
     img: ["./assets/img/tracker/detail/fetch/tracker.PNG"],
     content:
-      "To bulid a function that could fetch different countries' covid-19 stats based on different countries that selected by users. first of all, I have created a list of varibles to get all the DOM elements that I need by 'querySelector()', I also created some empty arraylists to hold covid-19 death case data, recovery data, total amount data and covid-19 news data etc.",
+      "To build a function that could fetch different countries' covid-19 stats based on different countries that selected by users. first of all, I have created a list of variables to get all the DOM elements that I need by 'querySelector()', I also created some empty array lists to hold covid-19 death case data, recovery data, total amount data and covid-19 news data etc.",
   },
   {
     subTitle:
       "2.1 For the country selection and country search function (js.js) ",
     img: ["./assets/img/tracker/detail/fetch/fetchdata.PNG"],
     content:
-      "In the second step, I created a function that called 'api_fetch', inside the function, I called a 'fetch()' with pass the interface of Covid-19 API, and mthod type of 'GET', when getting data from interface sucessfully, will be saved into each arraylists that I created early. For the part of global stats, I used regular expression like '/B(?=(d{3})+(?!d))/g' to make the number look better for reading. ",
+      "In the second step, I created a function that called 'api_fetch', inside the function, I called a 'fetch()' with pass the interface of Covid-19 API, and method type of 'GET', when getting data from interface successfully, will be saved into each array lists that I created early. For the part of global stats, I used regular expression like '/B(?=(d{3})+(?!d))/g' to make the number look better for reading.",
   },
   {
     subTitle:
       "2.2 For the country selection and country search function (js.js) ",
     img: ["./assets/img/tracker/detail/fetch/updatestat.PNG"],
     content:
-      "In the third step, I created a updateStats() function, inside the function, as I already got the arraylist of all data of covid-19 cases, death amounts, recovered amounts, from the pass until now, to get the currently data, I used the last data to substract the last second one. so that, I could get all current data. And then I put those data into the selected DOM and show them into the main page.",
+      "In the third step, I created a updateStats() function, inside the function, as I already got the array list of all data of covid-19 cases, death amounts, recovered amounts, from the pass until now, to get the currently data, I used the last data to subtract the last second one. so that, I could get all current data. And then I put those data into the selected DOM and show them into the main page.",
   },
   {
     subTitle:
       "2.3 For the country selection and country search function (js.js) ",
     img: ["./assets/img/tracker/detail/fetch/chart.PNG"],
     content:
-      "For the functionality of display data into the chart form, I used a free, open-source JavaScript library called 'Chart.js' to visualize these data. Then, I create a new Chart object called 'my_chart', and I initialize the config of chart as shown above. Passing those arraylists that I created early into the 'datasets', setting up the X-axis, and Y-axis, and also format the month name, and make it look better for read.",
+      "For the functionality of display data into the chart form, I used a free, open-source JavaScript library called 'Chart.js' to visualize these data. Then, I create a new Chart object called 'my_chart', and I initialize the config of chart as shown above. Passing those array lists that I created early into the 'datasets', setting up the X-axis, and Y-axis, and also format the month name, and make it look better for read.",
   },
   {
     apiURL: [
@@ -129,10 +143,38 @@ const tracker = [
 ];
 const weather = [
   {
+    subTitle: "1. Import React, and useState, API setting",
+    img: ["./assets/img/weather/detail/1.PNG"],
+    content:
+      "Firstly, I import ‘React’, and ‘useState’ in the app.js file. Inside the 'function App(){}', I declared one new state variable called 'query' for holding the query that will be input by user, one object called 'weather' for storing the today weather data that getting from Weather.API, and also one arraylist called 'weather1' for storing the dataset for weather of forecast 7 days that from Weather.API.",
+  },
+  {
+    subTitle: "2. Created search, FetchWeather. FetchFrocastWeather functions",
+    img: ["./assets/img/weather/detail/2.PNG"],
+    content:
+      "In the next step, I created three functions, one is called 'FetchWeather()', which will fetch data from the API, the data will be depended on the city name that input by user. the second function is called 'FetchFrocastWeather()', which is using for fetching the forecast weather data. the last function is 'search()', this function will have the last two functions inside, and it will be called when user finished typing and click the 'search' button.",
+  },
+  {
+    subTitle: "3. Date formate function and windDirection function",
+    img: ["./assets/img/weather/detail/3.PNG"],
+    content:
+      "To make the date easy to read, I created a data formatter called 'dateBuilder()' for it as the time coming back from the API is a form of timestamp. On the other hand, the second function is 'windDirection()', this function is designed for make some data are more easy to understand, such as the direction of wind. as the data are just degree, without text explanation, they will be hard to understand.",
+  },
+  {
+    subTitle: "4. Export the output into the page",
+    img: ["./assets/img/weather/detail/4.PNG"],
+    content:
+      "Lastly, inside the 'return()', there are will be mainly HTML by passing the data from API when user searched a city. As 'weather', 'weather1', 'query', has already store data from the API after click search button. I just looped through the 'weather' object and 'weather1' array list to DOM elements.",
+  },
+  {
     apiURL: [
       {
         name: "OPEN WEATHER API",
         url: "https://openweathermap.org/api",
+      },
+      {
+        name: "React Document",
+        url: "https://reactjs.org/docs/hooks-intro.html",
       },
     ],
   },
@@ -185,7 +227,7 @@ const projectDetails = [
       "Covid-19 tracker is created for checking different countries pandemic stat, including the positive case confirmed, death amount and recovery amount, as well as the global stat. those data are being fetching from covid-19 API. the second function of this website is fetching all the least news about pandemic from the country that being search. these news data are fetching from the news API.",
     Content: tracker,
     Reflection:
-      "During the process of creating this project, I have learnt a lot of basic knowledges about the 'fetch' methods and 'async' function. In addition, I also have a very basic understanding of Interface, API, learn how to use 'fetch' method to fetch data from API. This is very interesting and also a little bit challengage to me. However, I also think this project could be done better, like the UI design, or add more functionality to it, or make into multi-pages for different functions.",
+      "During the process of creating this project, I have learnt a lot of basic knowledges about the 'fetch' methods and 'async' function. In addition, I also have a very basic understanding of Interface, API, learn how to use 'fetch' method to fetch data from API. This is very interesting and also a little bit challenged to me. However, I also think this project could be done better, like the UI design, or add more functionality to it, or make into multi-pages for different functions.",
   },
   {
     id: "weather",
@@ -207,6 +249,8 @@ const projectDetails = [
     Details:
       "This is a personal project that using React.js, user can type cicty name in the input field, and seach its weather information, and including 10 days futuer weather prediction. all those of data are getting from OPEN WEATHER API, bseide, the layout of this website is resiponsive, showing properly in the mobile device size. ",
     Content: weather,
+    Reflection:
+      "To build this project, I have learned some basic knowledges of React, like its syntax, methods. After done the project, I feel like have a basic understanding of using React framework to fetch data from API. I also have a general idea of the Lifecyle of React. However, I think I still need more time to study deep in React, All I have to do is keep practice and practice in my spare time.",
   },
   {
     id: "pet",
@@ -238,6 +282,8 @@ const projectDetails = [
     Details:
       "Using HTML, CSS, JS to redesign an responsible mockup webstite for SFU therapist bet bussiness",
     Content: sfuPet,
+    Reflection:
+      "I have learned and gained some experience of not only the design side but also the development side. It is kind of a nice experience for me to start creating a website template from the scratch (Not including the back-end side of course), in addition, I also realize that the important of responsive design in a website, if we want the website always show nicely in any device. This is the key point knowledge I learnt in this project. On the other hand, I think my project also have some unsatisfying, like the folders structure lack of organize, it would turn into bad case if dealing with multipage project. therefore, I should take this in the consideration in my further projects.",
   },
 ];
 function popupEvent(el, content, distant) {
