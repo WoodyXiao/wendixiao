@@ -73,12 +73,12 @@ const sfuPet = [
   },
   {
     subTitle: "3. Final result in the main page",
-    img: ["./assets/img/pet/detail/1.gif"],
+    img: ["./assets/img/pet/detail/1.1.gif"],
     content: "",
   },
   {
     subTitle: "4. Final result in the second page",
-    img: ["./assets/img/pet/detail/2.gif"],
+    img: ["./assets/img/pet/detail/2.2.gif"],
     content: "",
   },
 ];
