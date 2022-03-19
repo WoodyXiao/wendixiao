@@ -382,3 +382,32 @@ const list = document.querySelectorAll(".close-icon");
 for (let i = 0; i < list.length; i++) {
   closePopup(list[i], list[i]);
 }
+
+let b = document.querySelectorAll(".backToTopButtonIcon");
+
+for (let i = 0; i < b.length; i++) {
+  b[i].addEventListener(
+    "click",
+    (event) => {
+      event.target.parentNode.parentNode.scrollTop = 0;
+    },
+    false
+  );
+  b[i].parentNode.parentNode.addEventListener(
+    "scroll",
+    (event) => {
+      if (b[i].parentNode.parentNode.scrollTop > 1000) {
+        b[i].parentNode.style.top = `${
+          b[i].parentNode.parentNode.scrollTop +
+          b[i].parentNode.parentNode.clientHeight -
+          70
+        }px`;
+      } else {
+        b[
+          i
+        ].parentNode.style.bottom = `${b[i].parentNode.parentNode.clientHeight}px`;
+      }
+    },
+    false
+  );
+}

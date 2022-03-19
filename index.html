@@ -496,7 +496,7 @@
               {{each $value.Content}}
               <h4>{{$value.subTitle}}</h4>
               {{each $value.img}}
-                <img src="{{$value}}" alt="" />
+              <img src="{{$value}}" alt="" />
               {{/each}}
               <p style="padding-top:20px;">{{$value.content}}</p>
               {{if $value.reportURL}}
@@ -525,9 +525,10 @@
             </div>
           </div>
         </div>
+        <div class="backToTopButton">
+          <i class="bx bx-chevron-up backToTopButtonIcon"></i>
         </div>
       </div>
-
       {{/each}}
     </script>
 

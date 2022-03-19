@@ -25,11 +25,33 @@
   height: 95%;
   border-radius: 1em;
   /* overflow: hidden; */
-  overflow-y: auto;
+  /* overflow-y: auto; */
+  overflow: scroll;
   position: relative;
+  transition: 0.4s;
+}
+.project-detail-window .project-detail .backToTopButton {
+  position: absolute;
+  right: 25px;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background: rgba(123, 111, 113, 0.7);
+  border-radius: 0.5rem;
+  z-index: var(--z-tooltip);
+  height: 50px;
+}
+.project-detail-window .project-detail .backToTopButton:hover {
+  cursor: pointer;
+}
+.project-detail-window .project-detail .backToTopButton .backToTopButtonIcon {
+  font-size: 2rem;
+  color: var(--first-color-lighten);
 }
 .close-icon-container .close-icon {
-  position: fixed;
+  position: sticky;
   z-index: 999;
   text-align: right;
 }
