@@ -346,16 +346,17 @@ popupEvent(
   document.getElementById("details"),
   0
 );
-popupEvent(
-  document.getElementById("tracker"),
-  document.getElementById("details"),
-  -109
-);
-popupEvent(
-  document.getElementById("tracker1"),
-  document.getElementById("details"),
-  -109
-);
+// popupEvent(
+//   document.getElementById("tracker"),
+//   document.getElementById("details"),
+//   -109
+// );
+// popupEvent(
+//   document.getElementById("tracker1"),
+//   document.getElementById("details"),
+//   -109
+// );
+// -217 -326
 popupEvent(
   document.getElementById("weather"),
   document.getElementById("details"),
