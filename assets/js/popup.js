@@ -207,25 +207,48 @@ const projectDetails = [
     // Reflection:
     //   "After we finished this project, my team members and I all learned and understood how to correctly create ER database and the relatively basic PHP syntax above. In addition, I also learned how to combine the jQuery syntax using ajax requests to get new information don't need to update the pages at the same time, it is very helpful to me, I also use this knowledge to create a user comment function, when the user to send comments, pages don't need to be updated, new comment content is displayed on the page, this will improve the page-friendly experience. However, I also feel throughout the project, I do not perfect, I should control management page to add a background, in this page, managers can modify or add or delete all the data in it, it is a pity that I didn't do it, and my project file path structure is a bit too bloated, there are some store I'm a little too much, so good method that could lead to me The project performance of PHP is not in the ideal state. In a word, I still need more practice and more in-depth knowledge points in PHP.",
   },
+  // {
+  //   id: "tracker",
+  //   img: [
+  //     "./assets/img/tracker/tracker1.PNG",
+  //     "./assets/img/tracker/tracker2.PNG",
+  //     "./assets/img/tracker/tracker3.PNG",
+  //   ],
+  //   Category: "Personal Project",
+  //   Language: "JavaScript Fetch chart.js",
+  //   Type: "Personal",
+  //   Name: ["Woody Xiao"],
+  //   Code: "https://github.com/WoodyXiao/covid-19-tracker",
+  //   URL: "https://woodyxiao.github.io/covid-19-tracker/",
+  //   Title: "Covid 19 Tracker",
+  //   Description:
+  //     "A simple covid-19 tracker that show stats of countries as well as the world. Geoplugin.js is not using at this moment. Since the News API plan limitation, the part of showing different countries covid-19 news are not available and only work on localhost (like live server extension in VSCode).",
+  //   // Details:
+  //   //   "Covid-19 tracker is created for checking different countries pandemic stat, including the positive case confirmed, death amount and recovery amount, as well as the global stat. those data are being fetching from covid-19 API. the second function of this website is fetching all the least news about pandemic from the country that being search. these news data are fetching from the news API.",
+  //   Content: tracker,
+  //   // Reflection:
+  //   //   "During the process of creating this project, I have learnt a lot of basic knowledges about the 'fetch' methods and 'async' function. In addition, I also have a very basic understanding of Interface, API, learn how to use 'fetch' method to fetch data from API. This is very interesting and also a little bit challenged to me. However, I also think this project could be done better, like the UI design, or add more functionality to it, or make into multi-pages for different functions.",
+  // },
   {
-    id: "tracker",
+    id: "stirfry",
     img: [
-      "./assets/img/tracker/tracker1.PNG",
-      "./assets/img/tracker/tracker2.PNG",
-      "./assets/img/tracker/tracker3.PNG",
+      "./assets/img/stirfry/stirfry1.PNG",
+      "./assets/img/stirfry/stirfry2.PNG",
+      "./assets/img/stirfry/stirfry3.PNG",
+      "./assets/img/stirfry/stirfry4.PNG",
     ],
-    Category: "Personal Project",
-    Language: "JavaScript Fetch chart.js",
+    Category: "Academic Project",
+    Language: "JAVA",
     Type: "Personal",
     Name: ["Woody Xiao"],
-    Code: "https://github.com/WoodyXiao/covid-19-tracker",
-    URL: "https://woodyxiao.github.io/covid-19-tracker/",
-    Title: "Covid 19 Tracker",
+    Code: "https://github.com/WoodyXiao/StirfryGame",
+    URL: "",
+    Title: "Yum Yum stir fry",
     Description:
-      "A simple covid-19 tracker that show stats of countries as well as the world. Geoplugin.js is not using at this moment. Since the News API plan limitation, the part of showing different countries covid-19 news are not available and only work on localhost (like live server extension in VSCode).",
+      "This is an interactive multimedia simulation that demonstrates a process of making stir fry, with the feature of user interactivity by using Java, JPanel",
     // Details:
     //   "Covid-19 tracker is created for checking different countries pandemic stat, including the positive case confirmed, death amount and recovery amount, as well as the global stat. those data are being fetching from covid-19 API. the second function of this website is fetching all the least news about pandemic from the country that being search. these news data are fetching from the news API.",
-    Content: tracker,
+    // Content: tracker,
     // Reflection:
     //   "During the process of creating this project, I have learnt a lot of basic knowledges about the 'fetch' methods and 'async' function. In addition, I also have a very basic understanding of Interface, API, learn how to use 'fetch' method to fetch data from API. This is very interesting and also a little bit challenged to me. However, I also think this project could be done better, like the UI design, or add more functionality to it, or make into multi-pages for different functions.",
   },
@@ -241,7 +264,7 @@ const projectDetails = [
     Language: "React.js Weather API",
     Type: "Personal",
     Name: ["Woody Xiao"],
-    Code: "",
+    Code: "https://github.com/WoodyXiao/weather-react-app",
     URL: "",
     Title: "Weather Checker",
     Description:
@@ -252,36 +275,59 @@ const projectDetails = [
     // Reflection:
     //   "To build this project, I have learned some basic knowledges of React, like its syntax, methods. After done the project, I feel like have a basic understanding of using React framework to fetch data from API. I also have a general idea of the Lifecyle of React. However, I think I still need more time to study deep in React, All I have to do is keep practice and practice in my spare time.",
   },
+  // {
+  //   id: "pet",
+  //   img: [
+  //     "./assets/img/pet/pet1.PNG",
+  //     "./assets/img/pet/pet2.PNG",
+  //     "./assets/img/pet/pet3.PNG",
+  //     "./assets/img/pet/pet4.PNG",
+  //     "./assets/img/pet/pet5.PNG",
+  //     "./assets/img/pet/pet6.PNG",
+  //     "./assets/img/pet/pet7.PNG",
+  //     "./assets/img/pet/pet8.PNG",
+  //     "./assets/img/pet/pet9.PNG",
+  //     "./assets/img/pet/pet10.PNG",
+  //     "./assets/img/pet/pet11.PNG",
+  //     "./assets/img/pet/pet12.PNG",
+  //     "./assets/img/pet/pet13.PNG",
+  //     "./assets/img/pet/pet14.PNG",
+  //   ],
+  //   Category: "Academic Project",
+  //   Language: "HTML CSS JS",
+  //   Type: "Group",
+  //   Name: ["Woody Xiao (Front-end)", "Kelly Hu (UX/UI)"],
+  //   Code: "https://github.com/WoodyXiao/xwd-website-practice",
+  //   URL: "https://woodyxiao.github.io/xwd-website-practice/",
+  //   Title: "SFUPet Business Website",
+  //   Description:
+  //     "Simple school project, a mockup website for therapist pet bussiness",
+  //   // Details:
+  //   //   "Using HTML, CSS, JS to redesign an responsible mockup webstite for SFU therapist bet bussiness",
+  //   Content: sfuPet,
+  //   // Reflection:
+  //   //   "I have learned and gained some experience of not only the design side but also the development side. It is kind of a nice experience for me to start creating a website template from the scratch (Not including the back-end side of course), in addition, I also realize that the important of responsive design in a website, if we want the website always show nicely in any device. This is the key point knowledge I learnt in this project. On the other hand, I think my project also have some unsatisfying, like the folders structure lack of organize, it would turn into bad case if dealing with multipage project. therefore, I should take this in the consideration in my further projects.",
+  // },
   {
     id: "pet",
     img: [
-      "./assets/img/pet/pet1.PNG",
-      "./assets/img/pet/pet2.PNG",
-      "./assets/img/pet/pet3.PNG",
-      "./assets/img/pet/pet4.PNG",
-      "./assets/img/pet/pet5.PNG",
-      "./assets/img/pet/pet6.PNG",
-      "./assets/img/pet/pet7.PNG",
-      "./assets/img/pet/pet8.PNG",
-      "./assets/img/pet/pet9.PNG",
-      "./assets/img/pet/pet10.PNG",
-      "./assets/img/pet/pet11.PNG",
-      "./assets/img/pet/pet12.PNG",
-      "./assets/img/pet/pet13.PNG",
-      "./assets/img/pet/pet14.PNG",
+      "./assets/img/dashboard/dashboard1.PNG",
+      "./assets/img/dashboard/dashboard2.PNG",
+      "./assets/img/dashboard/dashboard3.PNG",
+      "./assets/img/dashboard/dashboard4.PNG",
     ],
-    Category: "Academic Project",
-    Language: "HTML CSS JS",
-    Type: "Group",
-    Name: ["Woody Xiao (Front-end)", "Kelly Hu (UX/UI)"],
-    Code: "https://github.com/WoodyXiao/xwd-website-practice",
-    URL: "https://woodyxiao.github.io/xwd-website-practice/",
-    Title: "SFUPet Business Website",
+    Category: "Side Project",
+    Language: "React/Hooks, Material UI",
+    Type: "Personal",
+    Name: ["Woody Xiao"],
+    Code: "https://github.com/WoodyXiao/myWorkSpace",
+    URL: "https://woodyxiao.github.io/myWorkSpace/",
+    Title: "myWorkSpace",
     Description:
-      "Simple school project, a mockup website for therapist pet bussiness",
+      "This is a personal react project that included toDoList and eventScheduler.",
     // Details:
     //   "Using HTML, CSS, JS to redesign an responsible mockup webstite for SFU therapist bet bussiness",
-    Content: sfuPet,
+    // Content: sfuPet,
     // Reflection:
     //   "I have learned and gained some experience of not only the design side but also the development side. It is kind of a nice experience for me to start creating a website template from the scratch (Not including the back-end side of course), in addition, I also realize that the important of responsive design in a website, if we want the website always show nicely in any device. This is the key point knowledge I learnt in this project. On the other hand, I think my project also have some unsatisfying, like the folders structure lack of organize, it would turn into bad case if dealing with multipage project. therefore, I should take this in the consideration in my further projects.",
   },
@@ -356,6 +402,16 @@ popupEvent(
 //   document.getElementById("details"),
 //   -109
 // );
+popupEvent(
+  document.getElementById("stirfry"),
+  document.getElementById("details"),
+  -109
+);
+popupEvent(
+  document.getElementById("stirfry1"),
+  document.getElementById("details"),
+  -109
+);
 // -217 -326
 popupEvent(
   document.getElementById("weather"),
@@ -368,15 +424,26 @@ popupEvent(
   -217
 );
 popupEvent(
-  document.getElementById("pet"),
+  document.getElementById("dashboard"),
   document.getElementById("details"),
   -326
 );
 popupEvent(
-  document.getElementById("pet1"),
+  document.getElementById("dashboard1"),
   document.getElementById("details"),
   -326
 );
+
+// popupEvent(
+//   document.getElementById("pet"),
+//   document.getElementById("details"),
+//   -326
+// );
+// popupEvent(
+//   document.getElementById("pet1"),
+//   document.getElementById("details"),
+//   -326
+// );
 
 closePopup(window, document.getElementById("details"));
 const list = document.querySelectorAll(".close-icon");

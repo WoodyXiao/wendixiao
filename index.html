@@ -120,8 +120,8 @@
           <div class="about_data bd_grid">
             <p class="about__description">
               <span>Hello, I am Woody<br /></span>
-              I am currently a second year student in SFU who pursuing a CS degree, I am passionate about creating and
-              developing application.
+              I am currently a second year student in SFU who pursuing a CS
+              degree, I am passionate about creating and developing application.
             </p>
 
             <!-- <div>
@@ -156,9 +156,7 @@
 
             <div class="bd_grid">
               <div class="qualification_data">
-                <h3 class="qualification_area">
-                  Computing Science (Major)
-                </h3>
+                <h3 class="qualification_area">Computing Science (Major)</h3>
 
                 <div class="qualification__box">
                   <span class="qualification_work">
@@ -174,7 +172,9 @@
               </div>
 
               <div class="qualification_data">
-                <h3 class="qualification_area">Interactive Art and Technology (Minor)</h3>
+                <h3 class="qualification_area">
+                  Interactive Art and Technology (Minor)
+                </h3>
 
                 <div class="qualification__box">
                   <span class="qualification_work">
@@ -209,6 +209,34 @@
         </div>
 
         <div class="portfolio__container bd_grid" style="cursor: pointer">
+          <div
+            class="portfolio_content mix frontend"
+            id="dashboard1"
+            style="cursor: pointer"
+          >
+            <img
+              src="assets/img/dashboard/dashboard1.png"
+              alt=""
+              class="portfolio_img"
+            />
+
+            <div class="portfolio_data" id="dashboard">
+              <span class="portfolio_subtitle"
+                >Web development (React/Hooks, Material UI) - School
+                Project</span
+              >
+              <h2 class="portfolio_title">
+                myWorkSpace
+              </h2>
+
+              <a
+                href="https://github.com/WoodyXiao/myWorkSpace"
+                class="button button-link"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
           <div class="portfolio_content mix frontend" id="public1">
             <img src="assets/img/PublicArt1.png" alt="" class="portfolio_img" />
 
@@ -217,9 +245,11 @@
                 >Web development (PHP MySQL Ajax) - School Project</span
               >
               <h2 class="portfolio_title">Vancouver Public Art</h2>
-              <!-- <a href="./pages/publicArt.html" class="button button-link"
+              <a
+                href="https://github.com/WoodyXiao/IAT352-Final-Project"
+                class="button button-link"
                 >Source Code</a
-              > -->
+              >
             </div>
           </div>
 
@@ -239,12 +269,12 @@
                 >Web development (JavaScript) - Personal Project</span
               >
               <h2 class="portfolio_title">Covid-19 Tracker</h2> -->
-              <!-- <a
+          <!-- <a
                 href="https://github.com/WoodyXiao/covid-19-tracker"
                 class="button button-link"
                 >Source Code</a
               > -->
-            <!-- </div>
+          <!-- </div>
           </div> -->
 
           <div
@@ -259,11 +289,11 @@
                 >Web development (React) - Personal Project</span
               >
               <h2 class="portfolio_title">Weather Checker</h2>
-              <!-- <a href="" class="button button-link">Source Code</a> -->
+              <a href="https://github.com/WoodyXiao/weather-react-app" class="button button-link">Source Code</a>
             </div>
           </div>
 
-          <div
+          <!-- <div
             class="portfolio_content mix frontend"
             id="pet1"
             style="cursor: pointer"
@@ -276,11 +306,37 @@
               >
               <h2 class="portfolio_title">SFUPet business website</h2>
 
-              <!-- <a
+              <a
                 href="https://github.com/WoodyXiao/xwd-website-practice"
                 class="button button-link"
                 >Source Code</a
-              > -->
+              >
+            </div>
+          </div> -->
+
+          <div
+            class="portfolio_content mix frontend"
+            id="stirfry1"
+            style="cursor: pointer"
+          >
+            <img
+              src="assets/img/stirfry/stirfry1.png"
+              alt=""
+              class="portfolio_img"
+            />
+
+            <div class="portfolio_data" id="stirfry">
+              <span class="portfolio_subtitle"
+                >Interactive multimedia programming (JAVA) - School
+                Project</span
+              >
+              <h2 class="portfolio_title">Yum Yum Stir Fry</h2>
+
+              <a
+                href="https://github.com/WoodyXiao/StirfryGame"
+                class="button button-link"
+                >Source Code</a
+              >
             </div>
           </div>
 
@@ -417,7 +473,7 @@
           <a href="#" class="footer__link"><i class="bx bxl-instagram"></i></a>
         </div>
 
-        <p class="footer__copy">&#169; 2022 WoodyXiao. All right reserved</p>
+        <p class="footer__copy">&#169; 2023 WoodyXiao. All right reserved</p>
       </div>
     </footer>
 
@@ -465,9 +521,11 @@
                   <span>Member(s)</span>: {{each $value.Name}} {{$value}}
                   {{/each}}
                 </p>
+                {{if($value.URL)}}
                 <p>
                   <span>Project URL</span>: <a href="{{$value.URL}}">URL</a>
                 </p>
+                {{/if}}
                 <p>
                   <span>Source Code</span>:
                   <a href="{{$value.Code}}">Github</a>
