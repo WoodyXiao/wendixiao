@@ -309,7 +309,7 @@ const projectDetails = [
   //   //   "I have learned and gained some experience of not only the design side but also the development side. It is kind of a nice experience for me to start creating a website template from the scratch (Not including the back-end side of course), in addition, I also realize that the important of responsive design in a website, if we want the website always show nicely in any device. This is the key point knowledge I learnt in this project. On the other hand, I think my project also have some unsatisfying, like the folders structure lack of organize, it would turn into bad case if dealing with multipage project. therefore, I should take this in the consideration in my further projects.",
   // },
   {
-    id: "pet",
+    id: "dashboard",
     img: [
       "./assets/img/dashboard/dashboard1.PNG",
       "./assets/img/dashboard/dashboard2.PNG",
