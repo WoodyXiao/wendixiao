@@ -315,6 +315,7 @@ const projectDetails = [
       "./assets/img/dashboard/dashboard2.PNG",
       "./assets/img/dashboard/dashboard3.PNG",
       "./assets/img/dashboard/dashboard4.PNG",
+      "./assets/img/dashboard/dashboard5.PNG",
     ],
     Category: "Side Project",
     Language: "React/Hooks, Material UI",
